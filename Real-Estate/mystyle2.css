@@ -1,0 +1,74 @@
+/*global*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: arial;
+}
+p{
+    line-height: 2;
+}
+img{
+    max-width: 100%;
+}
+a{
+margin-right: 30px;
+color: white;
+text-decoration: none;;
+}
+/*header*/
+.site-init{
+    background-image: url(./realEstate-img-main/header.jpg);
+    background-size: cover;
+    height: 40vh;
+    color: white;
+    font-size: 20px;
+}
+.menu a{
+    margin-right: 20px;
+}
+.site-init p{
+    font-size: 20px;
+}
+/*main*/
+main{
+    width: 50px;
+    margin-right: 20px;
+}
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*utilities*/
+.flex-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.flex-header-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+}
+/*about-us*/
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*house item*/
+.house-item{
+    background-color: #dedede;
+    width: 400px;
+}
+.price{
+    color: green;
+    font-weight: bold;
+}

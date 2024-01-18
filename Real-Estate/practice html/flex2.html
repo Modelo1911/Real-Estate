@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+           align-items: flex-start;
+           height: 300px;
+           background-color: bisque;
+        }
+        .flex-image{
+            background-color: yellowgreen;
+            padding: 70px;
+            margin: 10px;
+            text-align: center;
+            flex-direction: column;
+        }
+        .list-container{
+            background-color: salmon;
+            padding: 200px;
+            margin: 10px;
+            text-align: right;
+            height: 50px;
+            align-items: flex-start;
+        }
+        .text-container{
+            background-color: brown;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex-container">
+    <div class="flex-image">Image</div>
+    <h1>This is H1</h1>
+    </header>
+
+    <main class="flex-container">
+        <div class="list-container">
+            <h2>List 2</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="flex-container">
+            <div class="flex-image">Insert image</div>
+            <p class=>Random paragragh</p>
+        </div>
+    </main>
+</body>
+</html>
