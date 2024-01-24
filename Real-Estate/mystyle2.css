@@ -1,4 +1,11 @@
 /*global*/
+:root{
+    --primary: rgb(182, 92, 19)
+    --secondary: rgb(16, 139, 16)
+}
+html{
+    font-size: 62.5%;/* 10px=1rem*/
+}
 *{
     margin:0;
     padding:0;
@@ -6,16 +13,30 @@
 body{
     font-family: arial;
 }
+h2{
+    text-align: center;
+    margin: lrem 0;
+    font-size: 2.4rem;
+}
 p{
-    line-height: 2;
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 img{
     max-width: 100%;
 }
 a{
-margin-right: 30px;
+text-decoration: none;
 color: white;
-text-decoration: none;;
+}
+@media(max-width: 768px){
+    .flex-header{
+        flex-direction: column;
+    }
+    .flex-header-v{
+        height: 20vh;
+        text-align: center;
+    }
 }
 /*header*/
 .site-init{
@@ -23,24 +44,35 @@ text-decoration: none;;
     background-size: cover;
     height: 40vh;
     color: white;
-    font-size: 20px;
 }
 .menu a{
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 .site-init p{
-    font-size: 20px;
+    font-size: 2rem;
+}
+.site-second{
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:768px){
+    .site-init{
+        height: 22vh;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
 }
 /*main*/
 main{
-    width: 50px;
-    margin-right: 20px;
+    width: 5rem;
+    margin-right: 2rem;
 }
 .container {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-
 }
 /*utilities*/
 .flex-header{
@@ -48,13 +80,32 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    height: 10rem;
 }
 .flex-header-v{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 35vh;
+}
+.container{
+        width: 80%;
+        margin:0 auto
+}
+.btn{
+    display: block;
+    font-size: 1.6rem;
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.flex-about .btn{
+    background-color: orangered;
+    padding: 1rem;
+    font-size: 1.4rem;
+    width: 250px;
+    text-align: center;
 }
 /*about-us*/
 .flex-about{
@@ -63,12 +114,51 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+@media(max-width: 768px){
+    .flex-about{
+        flex-direction: column;
+    }
+}
 /*house item*/
 .house-item{
     background-color: #dedede;
-    width: 400px;
+    width: 40rem;
 }
 .price{
     color: green;
     font-weight: bold;
+}
+/*contact form*/
+.form-container{
+
+}
+fieldset{
+    padding: 1rem;
+}
+legend,label,input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin: 1rem;
+}
+.input-container input,
+.input-container textarea{
+    width: 70%;
+    background-color: #dedede;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.input-container label{
+    display: inline-block;
+    width: 10rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+.dot{
+    height: 2.3rem;
+    width: 2.3rem;
+    background-color: #dedede;
+    border-radius: 50%;
+    display: inline-block;
 }
