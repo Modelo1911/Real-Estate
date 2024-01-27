@@ -28,6 +28,7 @@ img{
 a{
 text-decoration: none;
 color: white;
+font-size: 2rem;
 }
 @media(max-width: 768px){
     .flex-header{
@@ -44,6 +45,7 @@ color: white;
     background-size: cover;
     height: 40vh;
     color: white;
+    font-size: 3rem;
 }
 .menu a{
     margin-right: 2rem;
@@ -55,7 +57,6 @@ color: white;
     background-color: black;
     color: white;
 }
-
 @media(max-width:768px){
     .site-init{
         height: 22vh;
@@ -63,6 +64,27 @@ color: white;
     .site-init p{
         font-size: 1.5rem;
     }
+}
+.site-third{
+    background-image: url(./realEstate-img-main/highlight.jpg);
+    background-size: cover;
+    height: 30vh;
+    color: white;
+    font-size: 3rem;
+}
+.site-forth{
+    background-image: url(./realEstate-img-main/destacada3.jpg);
+    background-size: auto;
+    height: 30vh;
+    color: white;
+    font-size: 3rem;
+}
+.site-fith{
+    background-color: black;
+    background-size: auto;
+    height: 13vh;
+    color: white;
+    font-size: 1.7rem;
 }
 /*main*/
 main{
@@ -107,6 +129,14 @@ main{
     width: 250px;
     text-align: center;
 }
+.flex-about .btn2{
+    background-color: orangered;
+    padding: 1rem;
+    font-size: 1.4rem;
+    width: 250px;
+    text-align: center;
+    
+}
 /*about-us*/
 .flex-about{
     display: flex;
@@ -129,9 +159,6 @@ main{
     font-weight: bold;
 }
 /*contact form*/
-.form-container{
-
-}
 fieldset{
     padding: 1rem;
 }
